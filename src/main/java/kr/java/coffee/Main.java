@@ -24,7 +24,7 @@ public class Main {
 			
 		}
 		
-		
+		//이부분은 Eclipse에서 추가....
 	}
 
 }
