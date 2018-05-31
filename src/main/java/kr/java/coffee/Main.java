@@ -5,7 +5,7 @@ import kr.java.coffee.dto.Product;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("¸¶Âû½Ã°£");
+		System.out.println("ë§ˆì¹ ì‹œê°„");
 		
 		
 		Product p1 =new Product("A001");
@@ -17,13 +17,13 @@ public class Main {
 		
 		
 		if (p1.equals(p2))  {
-			System.out.println("°°À½");	
+			System.out.println("Â°Â°Å”Ë");	
 			
 		}else {
-			System.out.println("´Ù¸§");	
+			System.out.println("Â´Å®Â¸Â§");	
 			
 		}
-		
+		//ì´ë¬¸ì¥ì€ GitHubì—ì„œ 
 		
 	}
 
