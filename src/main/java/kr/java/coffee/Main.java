@@ -17,10 +17,10 @@ public class Main {
 		
 		
 		if (p1.equals(p2))  {
-			System.out.println("째째��");	
+			System.out.println("같음");	
 			
 		}else {
-			System.out.println("쨈큽쨍짠");	
+			System.out.println("다름");	
 			
 		}
 
