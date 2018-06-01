@@ -4,23 +4,30 @@
 
 
 <configuration>
-        <properties resource="conf.properties" />
-        <settings>      
-        <setting name="mapUnderscoreToCamelCase" value="true" />   
-        </settings>
-        <typeAliases></typeAliases>
-        <typeHandlers></typeHandlers>
-        <environments default="development">
-                <environment id="development">
-                        <transactionManager type="JDBC" />
-                        <dataSource type="POOLED">
-                                <property name="driver" value="${driver}" />
-                                <property name="url" value="${url}" />
-                                <property name="username" value="${user}" />
-                                <property name="password" value="${password}" />
-                        </dataSource>
-                </environment>
-        </environments>
+	<properties resource="conf.properties" />
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	
+	<typeAliases>
+		<package name="kr.java.coffee.dto" />
+	</typeAliases>
 
-        <mappers></mappers>
+	<typeHandlers></typeHandlers>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${user}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper resource="kr/java/coffee/mappers/ProductMapper.xml" />
+		<mapper resource="kr/java/coffee/mappers/SaleMapper.xml" />
+	</mappers>
 </configuration>
